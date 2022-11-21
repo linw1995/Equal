@@ -192,6 +192,8 @@
         suffix-icon="remove_red_eye"
         prefix-icon="cloud_queue"
       />
+      <it-input v-model="inputValue" message="It's disabled" disabled />
+      <it-input model-value="Hello World" message="It's read-only" readonly />
     </div>
 
     <div>

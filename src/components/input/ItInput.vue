@@ -24,6 +24,7 @@
           :type="type"
           class="it-input"
           :disabled="disabled"
+          :readonly="readonly"
           :value="modelValue"
           :placeholder="placeholder"
           @input="input"
@@ -76,6 +77,7 @@ export default defineComponent({
     suffixIcon: String,
     prefixIcon: String,
     disabled: Boolean,
+    readonly: Boolean,
     modelValue: [String, Number],
   },
   setup(props, { emit }) {
