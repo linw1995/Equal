@@ -5456,6 +5456,7 @@ const _sfc_main$1 = defineComponent({
   props: {
     placeholder: String,
     disabled: Boolean,
+    readonly: Boolean,
     resizable: Boolean,
     resizeOnWrite: Boolean,
     labelTop: String,
@@ -5492,7 +5493,7 @@ const _hoisted_2$1 = {
   key: 0,
   class: "it-input-label"
 };
-const _hoisted_3 = ["value", "disabled", "placeholder", "rows"];
+const _hoisted_3 = ["value", "disabled", "readonly", "placeholder", "rows"];
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", null, [
     createVNode(Transition, { name: "fade" }, {
@@ -5509,6 +5510,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
       value: _ctx.modelValue,
       style: normalizeStyle({ resize: _ctx.resize, "z-index": _ctx.mask ? "100" : null }),
       disabled: _ctx.disabled,
+      readonly: _ctx.readonly,
       class: "it-textarea",
       placeholder: _ctx.placeholder,
       rows: _ctx.rows,
