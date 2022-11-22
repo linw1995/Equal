@@ -203,6 +203,8 @@
         v-model="textareaValue"
         placeholder="Your placeholder"
       ></it-textarea>
+
+      <it-textarea model-value="Hello world" readonly></it-textarea>
     </div>
 
     <div>

@@ -9,6 +9,7 @@
       :value="modelValue"
       :style="{ resize, 'z-index': mask ? '100' : null }"
       :disabled="disabled"
+      :readonly="readonly"
       class="it-textarea"
       :placeholder="placeholder"
       :rows="rows"
@@ -22,7 +23,7 @@
 <script lang="ts">
 import { defineComponent, onMounted, nextTick, ref, computed } from 'vue'
 
-/* 
+/*
   todo:
   [] consider this https://css-tricks.com/the-cleanest-trick-for-autogrowing-textareas/
 */
@@ -32,6 +33,7 @@ export default defineComponent({
   props: {
     placeholder: String,
     disabled: Boolean,
+    readonly: Boolean,
     resizable: Boolean,
     resizeOnWrite: Boolean,
     labelTop: String,
